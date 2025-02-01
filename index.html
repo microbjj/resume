@@ -5,62 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="resume, kirnichny">
     <meta name="description" content="Мое сайт-резюме">
+    <link rel="stylesheet" href="style.css">
     <title>Резюме</title>
 </head>
 <body>
-    <img src="avatar.jpg" width="300" alt="logo">
-    <h1>Евгений Кирничный</h1>
-    <p><strong>Учусь, тренируюсь и программирую</strong> <em>каждый день!</em></p>
-    
-    <h4>Социальные сети:</h4>
-    <a href="https://www.instagram.com/ekirnichny/" target="_blank">Instagram</a> |
-    <a href="https://t.me/ekirnichny/" target="_blank">Telegram</a> |
-    <a href="https://vk.com/id22793635/" target="_blank">VK</a> |
-
-
-    <h2>Мои хобби</h2>
-    <ul>
-        <li>BJJ</li>
-        <li>Trading</li>
-        <li>Coding</li>
-    </ul>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tr>
-            <td>Microsoft</td>
-            <td>Public sector sales associate</td>
-            <td>2011 - 2013</td>
-        </tr>
-        <tr>
-            <td>Champion Gym</td>
-            <td>Персональный тренер</td>
-            <td>2013 - н.в.</td>
-        </tr>
-    </table>
-
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="name">Имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+        <div class="card info bg-light">
+            <img class="avatar" src="avatar.jpg" alt="avatar">
+            <div class="info-text">
+                <div class="info-name">
+                    <h1>Евгений Кирничный</h1>
+                    <p><strong>Учусь, тренируюсь и программирую</strong> <em>каждый день!</em></p>
+                </div>
+                
+                <div class="info-hobby">
+                    <h2>Мои хобби</h2>
+                    <ul class="list">
+                        <li>BJJ</li>
+                        <li>Trading</li>
+                        <li>Coding</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <label for="emale">Email:</label>
-            <input type="email" id="emale" placeholder="Введите email">
+        
+        <div class="card work bg-light">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <tr>
+                    <td>Microsoft</td>
+                    <td>Public sector sales associate</td>
+                    <td>2011 - 2013</td>
+                </tr>
+                <tr>
+                    <td>Champion Gym</td>
+                    <td>Персональный тренер</td>
+                    <td>2013 - н.в.</td>
+                </tr>
+            </table>
         </div>
-        <div>
-            <label for="msg">Сообщение:</label><br>
-            <textarea name="message" id="msg" cols="35" rows="5" placeholder="Введите сообщение.."></textarea>
+        
+        <div class="card contact bg-light">
+            <h2>Связаться со мной</h2>
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-input">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-input">
+                        <label for="emale">Email:</label>
+                        <input type="email" id="emale" placeholder="Введите email">
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="msg">Сообщение:</label>
+                    <textarea required name="message" id="msg" cols="35" rows="4" placeholder="Введите сообщение"></textarea>
+                </div>
+                <input class="btn bg-dark" type="submit" value="Отправить">
+            </form>
         </div>
-        <input type="submit" value="Отправить">
-    </form>
+        
+        <footer>
+            <a href="https://www.instagram.com/ekirnichny/" target="_blank">Instagram</a>
+            <a href="https://t.me/ekirnichny/" target="_blank">Telegram</a>
+            <a href="https://vk.com/id22793635/" target="_blank">VK</a>
+        </footer>
+    </div>
 </body>
 </html>

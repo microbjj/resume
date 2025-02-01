@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    background: #ddd;
+    color: #222831;
+}
+
+.bg-light {
+    background: #eeeeee;
+    color: #222831;
+}
+
+.bg-dark {
+    background: #393e46;
+    color: #eeeeee;
+}
+
+.bg-acc {
+    background: #00adb5;
+    color: #222831;
+}
+
+h1, h2, p {
+    margin: 0 0 15px 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 10px;
+}
+
+/* Info */
+.avatar {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px rgba(22, 2, 2, 0.3);
+}
+
+.info {
+    display: flex;
+}
+
+.info-name {
+    margin-bottom: 40px;
+}
+
+.info-text {
+    padding: 15px 25px;
+}
+
+.list {
+    padding: 0 20px;
+
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+/* Card */
+.card {
+    border-radius: 15px;
+    padding: 20px 25px;
+    margin-bottom: 15px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 5px;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #393e46;
+    font-style: italic;
+}
+
+
+/* Contact form */
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+
+.form-row .form-input {
+    margin-right: 10px;
+    width: 50%;
+}
+
+.form-row .form-input:last-child {
+    margin-right: 0;
+}
+
+.form-input label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.form-input input,
+.form-input textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c9d6df;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: inherit;
+    background: transparent;
+    padding: 5px;
+    resize: none;
+    outline-color: #00adb5;
+}
+
+.form-input textarea {
+    margin-bottom: 5px;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    width: 120px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background: #00adb5;
+    color: #222831;
+    transition: 0.2s;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    padding: 0 15px;
+    justify-content: center;
+}
+
+footer a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #222831;
+}
+
+a:hover {
+    color: #00adb5;
+    transition: 0.2s;
+}
+
+/* Media */
+@media (max-width: 500px) {
+    .info {
+        display: block;
+    }
+
+    .info-text {
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-input {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .btn {
+        width: 100%;
+    }
+};
+    
